@@ -47,6 +47,8 @@ def filter_numbers(numbers: [int], only_type: str | None) -> [int]:
     [1, 3]
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     [2, 4]
+    >>> filter_numbers([0, 1, 2, 3, 4, 5, 6], PRIME)
+    [2, 3, 5]
     """
     if only_type == ODD:
         func = is_odd
