@@ -29,10 +29,8 @@ def is_odd(number: int) -> bool:
 
 
 def is_prime(number: int) -> bool:
-    if number < 0:
-        raise BaseException
-    elif number <= 2:
-        return True
+    if number < 2:
+        return False
     for i in range(2, number):
         if number % i == 0:
             return False
