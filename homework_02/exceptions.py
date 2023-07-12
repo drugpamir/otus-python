@@ -6,13 +6,17 @@
 """
 
 
-class LowFuelError(BaseException):
+class VehicleException(BaseException):
+    pass
+
+
+class LowFuelError(VehicleException):
     print("Fuel is low")
 
 
-class NotEnoughFuel(BaseException):
+class NotEnoughFuel(VehicleException):
     print("Fuel is not enough")
 
 
-class CargoOverload(BaseException):
+class CargoOverload(VehicleException):
     print("Cargo is overloaded")
