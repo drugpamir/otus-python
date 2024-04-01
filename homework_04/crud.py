@@ -1,7 +1,7 @@
 from typing import List
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from . import User, Post
+from models import User, Post
 
 
 async def create_users(session: AsyncSession, users: List[User]):

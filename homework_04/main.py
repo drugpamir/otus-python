@@ -16,7 +16,9 @@ import asyncio
 import logging
 
 from jsonplaceholder_requests import get_users_from_service, get_posts_from_service
-from models import crud, engine, Session, Base
+from db import engine, Session
+from homework_04.models import Base
+import crud
 import common
 
 log = logging.getLogger(__name__)
